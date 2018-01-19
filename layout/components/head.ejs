@@ -1,4 +1,4 @@
-<head>
+<head >
   <meta charset="utf-8">
   <%
     var title = [];
@@ -73,6 +73,9 @@
   <% } %>
 
   <link href="<%- config.root %>favicon.ico" rel="icon">
+  
   <link rel="alternate" href="<% if (theme.rss){ %><%- theme.rss %><% } else { %><%- config.root %>atom.xml<% } %>" title="<%= config.title %>" type="application/atom+xml">
+  <link rel="stylesheet" href="<%- config.root %>css/base/bootstrap.min.css" media="screen" type="text/css">
   <link rel="stylesheet" href="<%- config.root %>css/style.css" media="screen" type="text/css">
+  
 </head>
