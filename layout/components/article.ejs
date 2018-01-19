@@ -94,6 +94,18 @@
     </div>
     <% } %>
   </div>
+  <% if (item.link){ %>
+    <% if (item.title){ %>
+    <h3 class="article-read"><a href="<%- item.link %>" target="_blank"><span>点击阅读</span></a></h3>
+    <% } else { %>
+    <h3 class="article-read"><a href="<%- item.link %>" target="_blank"><span>点击阅读</span></a></h3>
+    <% } %>
+  <% } else { %>
+    <% if (index){ %>
+    <h3 class="article-read"><a href="<%- config.root %><%- item.path %>"><span>点击阅读</span></a></h3>
+    <% } else { %>
+    <% } %>
+  <% } %>
 </article>
 <% if (!index && item.comments && (theme.duoshuo || theme.disqus)){ %>
   <%- partial('comment') %>

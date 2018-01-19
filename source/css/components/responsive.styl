@@ -2,16 +2,17 @@
   article
     padding 8rem 0
 
+
 @media (max-width: 1200px)
-  header 
+  header
     height: 420px
 
 @media (max-width: 960px)
-  header 
+  header
     height: 280px
 
 @media (max-width: 480px)
-  header 
+  header
     height: 190px
     .navbar-brand
       padding: 13px
@@ -20,6 +21,32 @@
     color: #fff !important
     padding: 20px !important
 
+
+@media (max-width: 768px)
+  .navbar-collapse
+    width: 170px
+    float: right
+    background: #333
+    position: absolute
+    right: 50px
+    box-shadow: rgba(0,0,0,.117647) 0 1px 6px, rgba(0,0,0,.239216) 0 1px 4px
+    border-radius: 2px
+    background: #fff
+    color: #404040
+  .nav li a
+    color: #999 !important
+    &:hover
+      color: #000 !important
+@media only screen and (max-width: 767px)
+  #bosenyblog-navbar.in
+      transform: scaleY(1)
+      opacity: 1
+      transition: all 250ms cubic-bezier(0.23,1,.32,1) 0ms
+  #bosenyblog-navbar
+      opacity: 0
+      transform: scaleY(0)
+      transform-origin: top right
+      transition: all 200ms cubic-bezier(0.47,0,.4,.99) 0ms
 
 
 
