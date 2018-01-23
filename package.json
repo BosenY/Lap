@@ -1,0 +1,27 @@
+{
+  "name": "lap",
+  "description": "a hexo theme",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BosenY/Lap.git"
+  },
+  "keywords": [
+    "hexo"
+  ],
+  "author": "boseny",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BosenY/Lap/issues"
+  },
+  "homepage": "https://github.com/BosenY/Lap#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.9.2",
+    "gulp-stylus": "^2.7.0"
+  }
+}
