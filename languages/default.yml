@@ -7,6 +7,7 @@ archive_a: Archives
 archive_b: "Archives: %s"
 page: Page %d
 recent_posts: Recent Posts
+read_btn: more
 
 Home: Home
 Archives: Archives
@@ -15,3 +16,4 @@ Tags: Tags
 About: About
 Links: Links
 RSS: RSS
+
