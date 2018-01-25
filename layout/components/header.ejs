@@ -1,4 +1,10 @@
-<header style="background-image: url('/images/blog-bg.jpg');">
+
+<% if(config.configimg) { %>
+    <header style="background-image: url(<%- config.configimg %>);">
+<% } else { %>
+    <header style="background-image: url('/images/blog-bg.jpg');">
+<% } %>
+
 <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
     <div class="container-fluid">
         <div class="navbar-header page-scroll">
