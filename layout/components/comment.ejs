@@ -1,32 +1,31 @@
-<% if (theme.duoshuo){ %>
-	<div id="comment">
-		
-	<!-- 多说评论框 start -->
-	 <div class="ds-thread" data-thread-key="<%- config.root %><%- item.path%>" data-title="<%- item.title %>" data-url="<%- item.permalink %>"></div>
-	<!-- 多说评论框 end -->
-	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<% if (theme.livere){ %>
+<!-- 来必力City版安装代码 -->
+<div id="lv-container" data-id="city" data-uid="<%- theme.livere_uid %>">
 	<script type="text/javascript">
-	var duoshuoQuery = {short_name:"<%- theme.duoshuo_name %>"};
-	  (function() {
-	    var ds = document.createElement('script');
-	    ds.type = 'text/javascript';ds.async = true;
-	    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-	    ds.charset = 'UTF-8';
-	    (document.getElementsByTagName('head')[0]
-	     || document.getElementsByTagName('body')[0]).appendChild(ds);
-	  })();
-	  </script>
-	<!-- 多说公共JS代码 end -->
+   (function(d, s) {
+       var j, e = d.getElementsByTagName(s)[0];
 
-	</div>
+       if (typeof LivereTower === 'function') { return; }
+
+       j = d.createElement(s);
+       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+       j.async = true;
+
+       e.parentNode.insertBefore(j, e);
+   })(document, 'script');
+	</script>
+<noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
+</div>
+<!-- City版安装代码已完成 -->
 <% } else if (theme.disqus) {%>
+
 	<section id="comments" class="comment">
 	  <div id="disqus_thread">
 	  <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 	  </div>
 	</section>
 
-	<script type="text/javascript">
+	<script type="text/javascript" defer>
 	var disqus_shortname = '<%= theme.disqus_shortname %>';
 	(function(){
 	  var dsq = document.createElement('script');
@@ -43,5 +42,10 @@
 	  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
 	}());
 	</script>
+<% } else if (theme.youyan) {%>
+<!-- UY BEGIN -->
+<div id="uyan_frame"></div>
+<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2156653"></script>
+<!-- UY END -->
 
 <% } %>

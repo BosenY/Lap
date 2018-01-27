@@ -3,14 +3,22 @@ menu:
   Archives: /archives
   About: /about
 
-# duoshuo comment
+# duoshuo comment 已废弃
 duoshuo: false
 duoshuo_name:
 
 # disqus comment
-disqus: false
-disqus_shortname:
+disqus: true
+disqus_shortname: boseny-blog
 
+# livere comment
+livere: false
+livere_uid: MTAyMC8zMzYwMC8xMDE1NQ==
+
+
+# youyan comment
+youyan: false
+youyan_uid: 2156653
 # google analytics
 googleTrackId:
 
