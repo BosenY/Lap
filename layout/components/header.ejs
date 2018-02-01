@@ -1,5 +1,7 @@
 
-<% if(config.configimg) { %>
+<% if(page.headerImg) { %>
+    <header style="background-image: url(<%- page.headerImg %>);">
+<% } else if(config.configimg) { %>
     <header style="background-image: url(<%- config.configimg %>);">
 <% } else { %>
     <header style="background-image: url('/images/blog-bg.jpg');">

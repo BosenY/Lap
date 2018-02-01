@@ -24,3 +24,6 @@ googleTrackId:
 
 toc:
   enable: true
+
+
+anchorjs: true

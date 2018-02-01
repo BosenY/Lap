@@ -1,0 +1,11 @@
+<div class="sidebar-container">
+<% if (page.path == "index.html"){ %>
+    <div class="categories-container" style="margin-top:40px;">
+        <p>归档:（正在开发...）</p>
+            <% site.categories.sort('name').map(function(category){  %>
+                <a href="<%= url_for(category.path) %>" title="<%= category.name %>" rel="<%= category.length %>"><%= category.name %></a>
+            <% }) %>
+    </div>
+
+<% } %>
+</div>

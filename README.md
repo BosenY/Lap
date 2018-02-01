@@ -21,11 +21,11 @@ theme: Lap
 
 ## other
 
-you can set bgimg in project's _config.yml:
+you can set bgimg in current markdown:
 
 ```
 #bg-img config
-configimg: /images/bg.jpg
+headerImg: /images/chunwu-bg.jpg
 
 ```
-and then add bg.jpg to the theme's source/images directory
+and then add bg.jpg to the  source/images directory

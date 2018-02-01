@@ -8,10 +8,39 @@
 
     <%- partial('components/header') %>
 
-    <main class="site-main posts-loop container">
-    <%- body %>
+        <% if (page.path == "index.html"){ %>
+        <div class="container ">
+          <div class="row">
+            <main class="site-main posts-loop    col-lg-8 col-lg-offset-1
+                    col-md-8 col-md-offset-1
+                    col-sm-12
+                    col-xs-12">
+            <%- body %>
+            </main>
+            <div class="sidebar
+                    col-lg-3 col-lg-offset-0
+                    col-md-3 col-md-offset-0
+                    col-sm-12
+                    col-xs-12
+                    sidebar-container
+                ">
+                <%- partial('components/sidebar') %>
+            </div>
+          </div>
+        </div>
+        <% } else { %>
+          <div class="container ">
+          <div class="row">
+            <main class="site-main posts-loop">
+            <%- body %>
+            </main>
+          </div>
+        </div>
+       <% } %>
 
-    </main>
+
+
+
 
     <%- partial('components/footer') %>
     <%- partial('components/googleanalytics') %>
