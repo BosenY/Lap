@@ -33,21 +33,21 @@
             color color-link
 
 figure.highlight
-  background #eee
+  // background #eee
   border 1px solid color-border
-  margin 1em 0
-  padding 1em
+  // margin 1em 0
+  // padding 1em
   border-radius 2px
-  text-shadow 0 0 1px #fff
-  line-height 1.6
-  overflow auto
-  position relative
-  font-size 0.9em
-   display: block;
-  overflow-x: auto;
-  padding: 0.5em;
-  color: #abb2bf;
-  background: #282c34;
+  // text-shadow 0 0 1px #fff
+  // line-height 1.6
+  // overflow auto
+  // position relative
+  // font-size 0.9em
+  display: block
+  overflow-x: auto
+  padding: 0.5em
+  color: #abb2bf
+  background: #282c34
   figcaption
     color color-meta
     margin-bottom 5px
@@ -57,22 +57,23 @@ figure.highlight
       right 15px
 
   pre
-    border none
+    border 0
     padding 0
     margin 0
-
+    background-color: #282c34
+    color: #93a1a1
+    font-family: Menlo,Monaco,Consolas,"Courier New",monospace
   table
     margin-top 0
     border-spacing 0
 
   .gutter
-    display: none;
+    // display: none;
     color color-meta
     width 20px
     padding-right 15px
     border-right 1px solid color-border
     text-align right
-
   .code
     // padding-left 15px
     // border-left 1px solid #fff
@@ -82,6 +83,7 @@ figure.highlight
     height: 20px
 
 pre
+
   // Theme: Solarized - Light
   // More theme here: http://softwaremaniacs.org/media/soft/highlight/test.html
   .comment
@@ -91,8 +93,8 @@ pre
   .pi
   .lisp .string
   .javadoc
-    color #93a1a1
-    font-style italic
+    color: #5c6370
+    font-style: italic
 
   .keyword
   .winutils
@@ -102,9 +104,8 @@ pre
   .request
   .status
   .nginx .title
-    color #859900
+    color: #c678dd
 
-  .number
   .command
   .string
   .tag .value
@@ -112,19 +113,21 @@ pre
   .tex .formula
   .regexp
   .hexcolor
-    color #2aa198
-
+    color: #98c379
+  .number
+    color: #e6c07b
   .title
   .localvars
   .chunk
   .decorator
-  .built_in
   .identifier
   .vhdl
-  .literal
   .id
-    color #268bd2
-
+    color #61aeee
+  .literal
+    color: #56b6c2
+  .built_in
+    color: #e6c07b
   .attribute
   .variable
   .lisp .body
@@ -133,7 +136,7 @@ pre
   .class .title
   .parent
   .haskell .type
-    color #b58900
+    color: #e6c07b
 
   .preprocessor
   .preprocessor .keyword
@@ -151,6 +154,88 @@ pre
 
   .deletion
     color #dc322f
+  // new
+  .meta
+  .symbol
+  .bullet
+  .link
+  .selector-id
+  .title
+    color: #61aeee
+  .name
+  .section
+  .selector-tag
+  .deletion
+  .subst
+    color: #e06c75
+  .attr,
+  .variable,
+  .template-variable,
+  .type,
+  .selector-class,
+  .selector-attr,
+  .selector-pseudo,
+  .number
+    color: #d19a66
+  .comment,
+  .quote
+    color: #5c6370
+    font-style: italic
+
+
+  .doctag,
+  .keyword,
+  .formula
+    color: #c678dd
+
+
+  .section,
+  .name,
+  .selector-tag,
+  .deletion,
+  .subst
+    color: #e06c75
+
+
+  .literal
+    color: #56b6c2
+
+
+  .string,
+  .regexp,
+  .addition,
+  .attribute,
+  .meta-string
+    color: #98c379
+
+
+  .built_in,
+  .class .title
+    color: #e6c07b
+
+
+
+
+  .symbol,
+  .bullet,
+  .link,
+  .meta,
+  .selector-id,
+  .title
+    color: #61aeee
+
+
+  .emphasis
+    font-style: italic
+
+
+  .strong
+    font-weight: bold
+
+
+  .link
+    text-decoration: underline
+
   /*
 Atom One Dark by Daniel Gamage
 Original One Dark Syntax theme from https://github.com/atom/one-dark-syntax
@@ -176,71 +261,3 @@ hue-6-2: #e6c07b
   background: #282c34;
 }
 
-.hljs-comment,
-.hljs-quote {
-  color: #5c6370;
-  font-style: italic;
-}
-
-.hljs-doctag,
-.hljs-keyword,
-.hljs-formula {
-  color: #c678dd;
-}
-
-.hljs-section,
-.hljs-name,
-.hljs-selector-tag,
-.hljs-deletion,
-.hljs-subst {
-  color: #e06c75;
-}
-
-.hljs-literal {
-  color: #56b6c2;
-}
-
-.hljs-string,
-.hljs-regexp,
-.hljs-addition,
-.hljs-attribute,
-.hljs-meta-string {
-  color: #98c379;
-}
-
-.hljs-built_in,
-.hljs-class .hljs-title {
-  color: #e6c07b;
-}
-
-.hljs-attr,
-.hljs-variable,
-.hljs-template-variable,
-.hljs-type,
-.hljs-selector-class,
-.hljs-selector-attr,
-.hljs-selector-pseudo,
-.hljs-number {
-  color: #d19a66;
-}
-
-.hljs-symbol,
-.hljs-bullet,
-.hljs-link,
-.hljs-meta,
-.hljs-selector-id,
-.hljs-title {
-  color: #61aeee;
-}
-
-.hljs-emphasis {
-  font-style: italic;
-}
-
-.hljs-strong {
-  font-weight: bold;
-}
-
-.hljs-link {
-  text-decoration: underline;
-}
