@@ -4,9 +4,17 @@
     Theme by <a href="https://github.com/Boseny" target="_blank">Lap</a>
     </br>
     <% if (config.author){ %>
-    &copy; <%= new Date().getFullYear() %> <%= config.author %>
+      <% if (config.startYear){ %>
+        &copy;<%= config.startYear %> - <%= new Date().getFullYear() %> <%= config.author %>
+      <% } else { %>
+        &copy; <%= new Date().getFullYear() %> <%= config.author %>
+      <% } %>
     <% } else { %>
-    &copy; <%= new Date().getFullYear() %> <%= config.title %>
+      <% if (config.startYear){ %>
+        &copy;<%= config.startYear %> - <%= new Date().getFullYear() %> <%= config.title %>
+      <% } else { %>
+        &copy; <%= new Date().getFullYear() %> <%= config.title %>
+      <% } %>
     <% } %>
   </p>
 </footer>
