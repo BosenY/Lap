@@ -1,4 +1,6 @@
 # Lap
+
+
 [![rel-image]][releases-url]
 [![hexo-image]][hexo-url]
 [![lic-image]](GPL-2.0)
@@ -41,3 +43,6 @@ and then add bg.jpg to the  source/images directory
 
 [releases-url]: https://github.com/BosenY/Lap/releases
 [hexo-url]: http://hexo.io
+[lic-image]: https://img.shields.io/dub/l/vibe-d.svg
+[hexo-image]: https://img.shields.io/badge/hexo-%3E%3D%203.0-blue.svg
+[rel-image]: https://img.shields.io/github/release/iissnan/hexo-theme-next.svg
