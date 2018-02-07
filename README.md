@@ -3,7 +3,6 @@
 
 [![rel-image]][releases-url]
 [![hexo-image]][hexo-url]
-[![lic-image]](GPL-2.0)
 
 A Hexo theme
 一个hexo 主题
