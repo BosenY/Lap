@@ -1,1 +1,9 @@
-<%- partial('components/article', {item: page, index: false}) %>
+
+
+<% if (page.type === 'categories'){ %>
+    <%- partial('components/categories', {index: false}) %>
+<% } else if (page.type === 'tags') { %>
+    <%- partial('./tags', {index: false}) %>
+<% } else { %>
+    <%- partial('components/article', {item: page, index: false}) %>
+<% } %>
