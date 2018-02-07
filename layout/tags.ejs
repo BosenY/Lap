@@ -1,6 +1,11 @@
 <article>
   <h2 class="article-title <% if (page.tag){ %> tag<% } else if (page.category){ %> category<% } %>"><%= page.title || config.title %></h2>
-
+  <!--
+  <%- tagcloud(site.tags,{min_font: 12, max_font: 30, amount: 300, color: true, start_color: '#ccc', end_color: '#111'}) %>
+  -->
+  <div class="tags-total">
+    <%- _p('counter.tag_cloud', site.tags.length) %>
+  </div>
   <div class="tags-cloud">
     <% site.tags.sort('name').map(function(tag){  %>
       <span class="post-tags">

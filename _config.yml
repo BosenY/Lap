@@ -2,6 +2,8 @@ menu:
   Home: /
   Archives: /archives
   About: /about
+  Tags: /tags
+  Categories: /categories
 
 # duoshuo comment 已废弃
 duoshuo: false

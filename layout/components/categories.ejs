@@ -1,6 +1,8 @@
 <article>
   <h2 class="article-title <% if (page.category){ %> category<% } else if (page.category){ %> category<% } %>"><%= page.title || config.title %></h2>
-
+  <div class="categories-total">
+    <%- _p('counter.categories', site.categories.length) %>
+  </div>
   <div class="categories-cloud">
     <% site.categories.sort('name').map(function(category){  %>
 			<span class="post-categories">
