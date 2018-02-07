@@ -1,4 +1,7 @@
 # Lap
+[![rel-image]][releases-url]
+[![hexo-image]][hexo-url]
+[![lic-image]](GPL-2.0)
 
 A Hexo theme
 一个hexo 主题
@@ -29,3 +32,12 @@ headerImg: /images/chunwu-bg.jpg
 
 ```
 and then add bg.jpg to the  source/images directory
+
+
+
+
+
+
+
+[releases-url]: https://github.com/BosenY/Lap/releases
+[hexo-url]: http://hexo.io
