@@ -3,8 +3,27 @@ menu:
   Archives: /archives
   About: /about
   Tags: /tags
-  Categories: /categories
+  # Categories: /categories
 
+
+
+# Social links
+social:
+  GitHub:
+    key: github
+    link: https://github.com/Boseny
+  # Twitter: https://twitter.com/your-user-name
+  微博:
+    key: weibo
+    link: https://weibo.com/boseny
+  # 豆瓣: http://douban.com/people/your-user-name
+  知乎:
+    key: zhihu
+    link: https://www.zhihu.com/people/boseny
+  Lofter:
+    key: lofter
+    link: http://boseny.lofter.com/
+  # 等等
 # duoshuo comment 已废弃
 duoshuo: false
 duoshuo_name:
