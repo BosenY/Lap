@@ -1,5 +1,7 @@
 <div class="sidebar-container">
-<% if (page.path == "index.html"){ %>
+
+<% if (page.path.indexOf("index.html")>=0){ %>
+
 <div style="   ">
 <form class="site-search-form">
     站内搜索(test)<input type="text" id="local-search-input" class="st-search-input" />
@@ -14,7 +16,7 @@ inputArea.onclick   = function(){ getSearchFile(); this.onclick = null }
 inputArea.onkeydown = function(){ if(event.keyCode == 13) return false }
 </script>
 
-<% if (page.path == "index.html"){ %>
+<% if (page.path.indexOf("index.html")>=0){ %>
     <div class="categories-container" style="margin-top:40px;">
         <p>归档:</p>
             <% site.categories.sort('name').map(function(category){  %>
@@ -24,7 +26,7 @@ inputArea.onkeydown = function(){ if(event.keyCode == 13) return false }
 
 <% } %>
 
-<% if (page.path == "index.html"){ %>
+<% if (page.path.indexOf("index.html")>=0){ %>
     <div class="social-container" style="margin-top:40px;">
         <p>Links:</p>
             <% for (var i in theme.social){ %>

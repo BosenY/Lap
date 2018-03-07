@@ -35,7 +35,7 @@ var searchFunc = function (path, search_id, content_id) {
         return {
           title: $("title", this).text(),
           content: $("content", this).text(),
-          url: $("link", this).attr("href")
+          url: $("url", this).text() != "" ? $("url", this).text() : $("link", this).attr("href")
         };
       }).get();
       $resultContent.innerHTML = "";
@@ -87,7 +87,7 @@ var searchFunc = function (path, search_id, content_id) {
           // 0x05. show search results
           if (isMatch) {
             //   console.log(data)
-            str += "<li><a href='" + data_url + "' class='search-result-title' target='_blank'>" + orig_data_title + "</a>";
+            str += "<li><a href='" + "/"+ data_url + "' class='search-result-title' target='_blank'>" + orig_data_title + "</a>";
             var content = orig_data_content;
             if (first_occur >= 0) {
               // cut out 100 characters
