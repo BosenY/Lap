@@ -1,16 +1,18 @@
 <div class="sidebar-container">
 <% if (page.path == "index.html"){ %>
-<div style="   ">
+
 <form class="site-search-form">
     站内搜索(test)<input type="text" id="local-search-input" class="st-search-input" />
 </form>
 <div id="local-search-result" class="local-search-result-cls"></div>
-</div>
+
+
 
 <% } %>
 <script type="text/javascript" id="local.search.active">
 var inputArea       = document.querySelector("#local-search-input");
 inputArea.onclick   = function(){ getSearchFile(); this.onclick = null }
+
 inputArea.onkeydown = function(){ if(event.keyCode == 13) return false }
 </script>
 
