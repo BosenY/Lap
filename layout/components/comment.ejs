@@ -84,3 +84,27 @@
 			}
 	</style>
 <% } %>
+<% if (theme.Gitment) { %>
+
+<!-- UY BEGIN -->
+	<div id="gitment-container"></div>
+	<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+	<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+	<script>
+		var GitHub_id = '<%= theme.Gitment_Github_id %>'
+		var client_id = '<%= theme.Gitment_client_id %>'
+		var client_secret = '<%= theme.Gitment_client_secret %>'
+		var repo = '<%= theme.repo %>'
+		var gitment = new Gitment({
+		// id: '页面 ID', // 可选。默认为 location.href
+		owner: GitHub_id,//'你的 GitHub ID',
+		repo: repo,//'存储评论的 repo',
+		oauth: {
+			client_id: client_id,//'你的 client ID',
+			client_secret: client_secret,//'你的 client secret',
+		},
+		})
+		gitment.render('gitment-container')
+	</script>
+<!-- UY END -->
+<% } %>

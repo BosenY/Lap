@@ -5,17 +5,27 @@
 
 @media (max-width: 1200px)
   header
-    height: 420px
+    height: 430px
 
 @media (max-width: 960px)
   header
-    height: 280px
+    height: 410px
+  .sidebar-container
+    position: static
+  .search-container
+    position: absolute
+    top: 420px
+    #local-search-result
+      left: 0px !important
+      right: 20px
 
 @media (max-width: 480px)
   header
-    height: 190px
+    height: 250px
     .navbar-brand
       padding: 13px
+  .search-container
+    top: 260px
 @media only screen and (min-width: 768px)
   .nav li a
     color: #fff !important

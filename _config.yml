@@ -29,14 +29,19 @@ duoshuo: false
 duoshuo_name:
 
 # disqus comment
-disqus: true
+disqus: false
 disqus_shortname: boseny-blog
 
 # livere comment
 livere: false
 livere_uid: MTAyMC8zMzYwMC8xMDE1NQ==
 
-
+#Gitment
+Gitment: true
+Gitment_client_id: f40c67d0359a2646d2b1
+Gitment_client_secret: 1cbedbd1a1a2e4b42901aee3d7afe1856c1b7e2d
+Gitment_Github_id: Boseny
+repo: boseny.me
 # youyan comment
 youyan: false
 youyan_uid: 2156653
