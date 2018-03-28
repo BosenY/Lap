@@ -1,6 +1,6 @@
 <div class="sidebar-container">
 
-<% if (page.path.indexOf("index.html")>=0){ %>
+<% if (theme.search){ %>
 
 <div class="search-container">
 <form class="site-search-form">
@@ -8,15 +8,15 @@
 </form>
 <div id="local-search-result" class="local-search-result-cls"></div>
 </div>
-
-<% } %>
 <script type="text/javascript" id="local.search.active">
 var inputArea       = document.querySelector("#local-search-input");
 inputArea.onclick   = function(){ getSearchFile(); this.onclick = null }
 inputArea.onkeydown = function(){ if(event.keyCode == 13) return false }
 </script>
+<% } %>
 
-<% if (page.path.indexOf("index.html")>=0){ %>
+
+<% if (theme.categories){ %>
     <div class="categories-container" style="margin-top:40px;">
         <p>归档:</p>
             <% site.categories.sort('name').map(function(category){  %>
@@ -26,7 +26,7 @@ inputArea.onkeydown = function(){ if(event.keyCode == 13) return false }
 
 <% } %>
 
-<% if (page.path.indexOf("index.html")>=0){ %>
+<% if (theme.links){ %>
     <div class="social-container" style="margin-top:40px;">
         <p>Links:</p>
             <% for (var i in theme.social){ %>
@@ -37,10 +37,7 @@ inputArea.onkeydown = function(){ if(event.keyCode == 13) return false }
                 <%}else {%>
                     <li class="social-item"><i class="fa fa-fw fa-<%= theme.social[i].key  %>"></i><a href="<%- theme.social[i].link %>"><%= __(i) %></a></li>
                 <%}%>
-
             <% } %>
-
     </div>
-
 <% } %>
 </div>

@@ -12,11 +12,9 @@ social:
   GitHub:
     key: github
     link: https://github.com/Boseny
-  # Twitter: https://twitter.com/your-user-name
   微博:
     key: weibo
     link: https://weibo.com/boseny
-  # 豆瓣: http://douban.com/people/your-user-name
   知乎:
     key: zhihu
     link: https://www.zhihu.com/people/boseny
@@ -36,12 +34,13 @@ disqus_shortname: boseny-blog
 livere: false
 livere_uid: MTAyMC8zMzYwMC8xMDE1NQ==
 
-#Gitment
+#Gitment (Recommended Use) see https://imsun.net/posts/gitment-introduction/
 Gitment: true
 Gitment_client_id: f40c67d0359a2646d2b1
 Gitment_client_secret: 1cbedbd1a1a2e4b42901aee3d7afe1856c1b7e2d
 Gitment_Github_id: Boseny
 repo: boseny.me
+
 # youyan comment
 youyan: false
 youyan_uid: 2156653
@@ -51,5 +50,12 @@ googleTrackId:
 toc:
   enable: true
 
-
+# anchorjs
 anchorjs: true
+
+# sidebar search
+search: true
+# sidebar categories
+categories: true
+# sidebar links
+links: true
