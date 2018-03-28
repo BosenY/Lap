@@ -23,14 +23,13 @@ git clone https://github.com/BosenY/Lap.git
 
 Modify `theme` setting in site's `_config.yml` to `Lap`:
 
-```
+```yaml
 theme: Lap
-
 ```
 ## More Config
 
 Setting these in your `theme's `   ` _config.yml`
-```
+```yaml
 # Social links
 social:
   GitHub:
