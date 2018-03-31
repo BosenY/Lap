@@ -1,0 +1,39 @@
+#toc
+  float right
+  font-size 0.8em
+  color color-link
+  margin 5px
+  position: absolute
+  right: 15%
+  top: 540px
+  &.fixed
+    position: fixed
+    top: 25px
+    // left: 85%
+  .toc-title
+    font-size: 2em
+  .toc-item,.toc-link
+    list-style none
+    &.active
+      border-radius: 4px
+      background-color: #F5F5F5
+    a
+      color: #337ab7
+      padding-left: 10px
+      max-width: 100px
+      display: inline-block
+      vertical-align: middle
+      height: 30px
+      line-height: 30px
+      overflow: hidden
+      text-decoration: none
+      white-space: nowrap
+      text-overflow: ellipsis
+      &:hover
+        color: #f03838
+  ol
+    margin 0
+  @media screen and (max-width: 1000px)
+    display none
+   
+  
