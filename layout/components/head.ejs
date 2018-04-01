@@ -71,7 +71,7 @@
   <% } else { %>
   <meta property="og:image" content="<%- config.root %>favicon.ico"/>
   <% } %>
-
+  <link rel="manifest" href="/manifest.json">
   <link href="<%- config.root %>favicon.ico" rel="icon">
 
   <link rel="alternate" href="<% if (theme.rss){ %><%- theme.rss %><% } else { %><%- config.root %>atom.xml<% } %>" title="<%= config.title %>" type="application/atom+xml">

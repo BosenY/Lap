@@ -34,7 +34,6 @@ $(window).scroll(function() {
     var $catalog = $('#toc');
     // $catalog.show()
     if ($(this).scrollTop() > (headerHeight + 95)) {
-      console.log($(this).scrollTop())
         $catalog.addClass('fixed')
         // $catalog.removeAttr("left")
     } else {
@@ -54,7 +53,7 @@ topBtn.addEventListener("click", () => {
   $("html,body").animate({ scrollTop: "0px" }, 500);
   $(".gotop-btn").removeClass("top-active");
 });
-if($toc.childElementCount <= 1) {
+if($toc.childElementCount && $toc.childElementCount <= 1) {
   $toc.style.display = "none"
 }
 
