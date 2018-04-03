@@ -26,6 +26,20 @@ Modify `theme` setting in site's `_config.yml` to `Lap`:
 ```yaml
 theme: Lap
 ```
+## Plugins
+
+I use some plugins to realize some features such as ：
+
+1. Site Search
+2. PWA
+
+If you want to use, you have to install these plugins: 
+
+```
+yarn add hexo-generator-search hexo-generator-searchdb // search
+yarn add hexo-offline // pwa
+```
+
 ## More Config
 
 Setting these in your `theme's `   ` _config.yml`
