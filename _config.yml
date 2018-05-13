@@ -59,3 +59,9 @@ search: true
 categories: true
 # sidebar links
 links: true
+
+
+draw: true
+draw_maxNum: 10
+draw_iconText: ❤
+draw_color: red

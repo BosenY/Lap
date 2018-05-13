@@ -92,6 +92,13 @@ search: true
 categories: true
 # sidebar links
 links: true
+
+# 飘落插件
+# 具体请看 https://github.com/BosenY/Draw
+draw: true #默认开启
+draw_maxNum: 10 #最大飘落个数
+draw_iconText: ❤ #飘落个体
+draw_color: red #飘落个体颜色
 ```
 
 ## Other

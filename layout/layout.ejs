@@ -30,7 +30,6 @@
           </div>
         </div>
         <% } else { %>
-
           <div class="container ">
           <div class="row">
             <main class="site-main posts-loop col-lg-8 col-lg-offset-2
@@ -41,11 +40,6 @@
           </div>
         </div>
        <% } %>
-
-
-
-
-
     <%- partial('components/footer') %>
     <%- partial('components/googleanalytics') %>
   </div>
@@ -55,6 +49,15 @@
 <script src="https://cdn.bootcss.com/vue/2.5.13/vue.min.js"></script>
 <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<% if(theme.draw) { %>
+  <script src="https://unpkg.com/draw-something/dist/draw.min.js"></script>
+  <script>
+    let maxNum = Number.parseInt('<%= theme.draw_maxNum %>') 
+    let iconText = '<%= theme.draw_iconText %>'
+    let color = '<%= theme.draw_color %>'
+    new Draw({maxNum, iconText, color})
+  </script>
+<% } %>
 <script src="<%- config.root %>js/index.js"></script>
 <script src="<%- config.root %>js/search.js"></script>
 
