@@ -1,10 +1,8 @@
 # Lap
 
-
 [![hexo-image]][hexo-url]
 
 Lap is a simple blog theme what has basic functions, it borrows styles from some bootstrap themes, but it focus on writing and communicating.
-
 
 # Demo
 
@@ -26,14 +24,15 @@ Modify `theme` setting in site's `_config.yml` to `Lap`:
 ```yaml
 theme: Lap
 ```
+
 ## Plugins
 
 I use some plugins to realize some features such as ：
 
-1. Site Search
-2. PWA
+1.  Site Search
+2.  PWA
 
-If you want to use, you have to install these plugins: 
+If you want to use, you have to install these plugins:
 
 ```
 yarn add hexo-generator-search hexo-generator-searchdb // search
@@ -42,7 +41,8 @@ yarn add hexo-offline // pwa
 
 ## More Config
 
-Setting these in your `theme's `   ` _config.yml`
+Setting these in your `theme's` `_config.yml`
+
 ```yaml
 # Social links
 social:
@@ -80,6 +80,12 @@ repo:
 # google analytics
 googleTrackId:
 
+# google AdSenseId
+AdSenseId:
+
+# 百度统计
+baidu_analytics:
+
 toc:
   enable: true
 
@@ -108,14 +114,9 @@ You can set bgimg in current markdown:
 ```
 #bg-img config
 headerImg: /images/chunwu-bg.jpg
-
 ```
-and then add bg.jpg to the  source/images directory
 
-
-
-
-
+and then add bg.jpg to the source/images directory
 
 [boseny.me]: https://boseny.me
 [hexo-url]: http://hexo.io
