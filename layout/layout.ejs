@@ -24,7 +24,7 @@
                     col-xs-12
                     sidebar-container
                 ">
-                
+
                 <%- partial('components/sidebar') %>
             </div>
           </div>
@@ -42,6 +42,7 @@
        <% } %>
     <%- partial('components/footer') %>
     <%- partial('components/googleanalytics') %>
+
   </div>
 
 </div>
@@ -52,7 +53,7 @@
 <% if(theme.draw) { %>
   <script src="https://unpkg.com/draw-something/dist/draw.min.js"></script>
   <script>
-    let maxNum = Number.parseInt('<%= theme.draw_maxNum %>') 
+    let maxNum = Number.parseInt('<%= theme.draw_maxNum %>')
     let iconText = '<%= theme.draw_iconText %>'
     let color = '<%= theme.draw_color %>'
     new Draw({maxNum, iconText, color})

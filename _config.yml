@@ -45,7 +45,13 @@ repo: boseny.me
 youyan: false
 youyan_uid: 2156653
 # google analytics
-googleTrackId:
+googleTrackId: UA-92842840-1
+
+# google AdSenseId
+AdSenseId: ca-pub-5005349780815724
+
+# 百度统计
+baidu_analytics: 223eea22355699157e147870eb124b24
 
 toc:
   enable: true
