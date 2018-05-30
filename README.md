@@ -6,8 +6,6 @@ Lap is a simple blog theme what has basic functions, it borrows styles from some
 
 # Demo
 
-![](http://owgraa3f3.bkt.clouddn.com/18-3-29/29530499.jpg)
-
 You can preview my blog: [boseny.me]
 
 ## Install
