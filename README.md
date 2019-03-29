@@ -6,7 +6,7 @@ Lap is a simple blog theme what has basic functions, it borrows styles from some
 
 # Demo
 
-You can preview my blog: [boseny.me]
+You can preview my blog: [boseny.github.io]
 
 ## Install
 
@@ -116,6 +116,6 @@ headerImg: /images/chunwu-bg.jpg
 
 and then add bg.jpg to the source/images directory
 
-[boseny.me]: https://boseny.me
+[boseny.github.io]: https://boseny.github.io
 [hexo-url]: http://hexo.io
 [hexo-image]: https://img.shields.io/badge/hexo-%3E%3D%203.0-blue.svg
